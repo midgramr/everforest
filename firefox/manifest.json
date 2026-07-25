@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "midgramr@everforest"
+    }
+  },
+  "version": "1.1",
+  "name": "Everforest",
+  "theme": {
+    "colors": {
+      "toolbar": "#2d353b",
+      "toolbar_text": "#d3c6aa",
+      "frame": "#232a2e",
+      "tab_background_text": "#d3c6aa",
+      "toolbar_field": "#343f44",
+      "toolbar_field_text": "#d3c6aa",
+      "tab_line": "#475258",
+      "popup": "#343f44",
+      "popup_text": "#d3c6aa",
+      "frame_inactive": "#2d353b",
+      "icons_attention": "#a7c080",
+      "popup_highlight_text": "#d3c6aa",
+      "popup_highlight": "#a7c08099",
+      "popup_border": "#475258",
+      "sidebar_border": "#475258",
+      "sidebar_text": "#d3c6aa",
+      "sidebar": "#343f44",
+      "tab_selected": "#343f44",
+      "toolbar_bottom_separator": "#475258",
+      "toolbar_field_border_focus": "#a7c08099",
+      "toolbar_field_highlight": "#a7c08099",
+      "toolbar_top_separator": "#475258",
+      "tab_loading": "#475258",
+      "ntp_card_background": "#3d484d",
+      "ntp_text": "#d3c6aa"
+    }
+  }
+}
