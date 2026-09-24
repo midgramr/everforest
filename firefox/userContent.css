@@ -1,0 +1,109 @@
+/* Everforest medium dark — Firefox 156.0.1, 2026-09-24.
+ * Palette: sainnhe/everforest (MIT), supplied everforest.vim files.
+ * Built-in pages only; about:blank is excluded because websites embed it.
+ * Modern Firefox design tokens checked against the installed stylesheets.
+ */
+
+@-moz-document regexp("about:(?!blank(?:[?#].*)?$).*"),
+  url-prefix("chrome://browser/content/preferences/"),
+  url-prefix("chrome://mozapps/content/preferences/"),
+  url("chrome://mozapps/content/extensions/aboutaddons.html") {
+  @media not (forced-colors: active) {
+    :root {
+      color-scheme: dark !important;
+      --uc-ef-dim: #232a2e;
+      --uc-ef-bg0: #2d353b;
+      --uc-ef-bg1: #343f44;
+      --uc-ef-bg2: #3d484d;
+      --uc-ef-bg3: #475258;
+      --uc-ef-bg4: #4f585e;
+      --uc-ef-visual: #543a48;
+      --uc-ef-greenbg: #425047;
+      --uc-ef-fg: #d3c6aa;
+      --uc-ef-muted: #9da9a0;
+      --uc-ef-green: #a7c080;
+      --uc-ef-aqua: #83c092;
+      --uc-ef-blue: #7fbbb3;
+      --uc-ef-red: #e67e80;
+      --uc-ef-yellow: #dbbc7f;
+
+      --background-color-canvas: var(--uc-ef-bg0) !important;
+      --table-row-background-color: var(--uc-ef-bg0) !important;
+      --background-color-box: var(--uc-ef-bg1) !important;
+      --background-color-box-info: var(--uc-ef-bg1) !important;
+      --input-text-background-color: var(--uc-ef-bg1) !important;
+      --panel-background-color: var(--uc-ef-bg1) !important;
+      --card-background-color: var(--uc-ef-bg1) !important;
+      --table-row-background-color-alternate: var(--uc-ef-bg1) !important;
+      --background-color-dimmed: var(--uc-ef-bg2) !important;
+      --background-color-list-item-hover: var(--uc-ef-bg2) !important;
+      --button-background-color: var(--uc-ef-bg2) !important;
+      --button-background-color-disabled: var(--uc-ef-bg2) !important;
+      --button-background-color-ghost-hover: var(--uc-ef-bg2) !important;
+      --background-color-dimmed-further: var(--uc-ef-bg3) !important;
+      --button-background-color-hover: var(--uc-ef-bg3) !important;
+      --button-background-color-ghost-active: var(--uc-ef-bg3) !important;
+      --border-color: var(--uc-ef-bg3) !important;
+      --border-color-deemphasized: var(--uc-ef-bg3) !important;
+      --panel-border-color: var(--uc-ef-bg3) !important;
+      --card-border-color: var(--uc-ef-bg3) !important;
+      --input-border-color: var(--uc-ef-bg3) !important;
+      --focus-outline-color: var(--uc-ef-bg4) !important;
+      --button-background-color-active: var(--uc-ef-greenbg) !important;
+      --color-accent-primary-selected: var(--uc-ef-greenbg) !important;
+      --text-color: var(--uc-ef-fg) !important;
+      --text-color-list-item-hover: var(--uc-ef-fg) !important;
+      --text-color-accent-primary-selected: var(--uc-ef-fg) !important;
+      --button-text-color: var(--uc-ef-fg) !important;
+      --button-text-color-hover: var(--uc-ef-fg) !important;
+      --button-text-color-active: var(--uc-ef-fg) !important;
+      --input-text-color: var(--uc-ef-fg) !important;
+      --panel-text-color: var(--uc-ef-fg) !important;
+      --text-color-deemphasized: var(--uc-ef-muted) !important;
+      --text-color-disabled: var(--uc-ef-muted) !important;
+      --button-text-color-disabled: var(--uc-ef-muted) !important;
+      --color-accent-primary: var(--uc-ef-green) !important;
+      --button-background-color-primary: var(--uc-ef-green) !important;
+      --icon-color-success: var(--uc-ef-green) !important;
+      --color-accent-primary-hover: var(--uc-ef-aqua) !important;
+      --button-background-color-primary-hover: var(--uc-ef-aqua) !important;
+      --link-color-hover: var(--uc-ef-aqua) !important;
+      --color-accent-primary-active: var(--uc-ef-blue) !important;
+      --button-background-color-primary-active: var(--uc-ef-blue) !important;
+      --link-color: var(--uc-ef-blue) !important;
+      --link-color-active: var(--uc-ef-blue) !important;
+      --button-text-color-primary: var(--uc-ef-dim) !important;
+      --button-text-color-primary-hover: var(--uc-ef-dim) !important;
+      --button-text-color-primary-active: var(--uc-ef-dim) !important;
+      --table-header-text-color: var(--uc-ef-dim) !important;
+      --text-color-error: var(--uc-ef-red) !important;
+      --icon-color-critical: var(--uc-ef-red) !important;
+      --icon-color-warning: var(--uc-ef-yellow) !important;
+      background-color: var(--uc-ef-bg0) !important;
+      color: var(--uc-ef-fg) !important;
+      accent-color: var(--uc-ef-green) !important;
+    }
+
+    body {
+      background-color: var(--uc-ef-bg0) !important;
+      color: var(--uc-ef-fg) !important;
+    }
+
+    ::selection {
+      background-color: var(--uc-ef-visual) !important;
+      color: var(--uc-ef-fg) !important;
+    }
+
+    input:is([type="search"], [type="text"], [type="url"], :not([type])),
+    textarea {
+      background-color: var(--uc-ef-bg1) !important;
+      color: var(--uc-ef-fg) !important;
+      caret-color: var(--uc-ef-fg) !important;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--uc-ef-bg4) !important;
+      outline-color: var(--uc-ef-bg4) !important;
+    }
+  }
+}
