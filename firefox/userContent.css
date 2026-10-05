@@ -122,6 +122,27 @@
   }
 }
 
+@-moz-document url-prefix("about:preferences"),
+  url-prefix("chrome://browser/content/preferences/") {
+  @media not (forced-colors: active) {
+    #categories moz-page-nav-button {
+      --page-nav-button-background-color: transparent !important;
+      --page-nav-button-background-color-selected: transparent !important;
+      --page-nav-button-background-color-hover: var(--uc-ef-bg1) !important;
+      --page-nav-button-background-color-active: var(--uc-ef-bg1) !important;
+      --page-nav-button-text-color: var(--uc-ef-fg) !important;
+      --page-nav-button-text-color-selected: var(--uc-ef-fg) !important;
+      --page-nav-button-text-color-hover: var(--uc-ef-fg) !important;
+      --page-nav-button-text-color-active: var(--uc-ef-fg) !important;
+      --page-nav-button-indicator-background-color: transparent !important;
+    }
+
+    #categories moz-page-nav-button:hover {
+      --page-nav-button-background-color-selected: var(--uc-ef-bg1) !important;
+    }
+  }
+}
+
 /* Firefox start screen — Neovim-inspired typography, native search. */
 @-moz-document url("about:home"), url("about:newtab") {
   @media not (forced-colors: active) {
