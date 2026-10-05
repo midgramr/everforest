@@ -1,8 +1,15 @@
-/* Everforest medium dark — Firefox 156.0.1, 2026-09-24.
+/* Everforest medium dark — Firefox 157.0, 2026-10-05.
  * Palette: sainnhe/everforest (MIT), supplied everforest.vim files.
- * Built-in pages only; about:blank is excluded because websites embed it.
+ * Page styling is limited to built-in pages; scrollbar colors apply globally.
+ * about:blank is excluded from page styling because websites embed it.
  * Modern Firefox design tokens checked against the installed stylesheets.
  */
+
+@media not (forced-colors: active) {
+  * {
+    scrollbar-color: #7a8478 #2d353b !important;
+  }
+}
 
 @-moz-document regexp("about:(?!blank(?:[?#].*)?$).*"),
   url-prefix("chrome://browser/content/preferences/"),
@@ -34,6 +41,11 @@
       --background-color-box-info: var(--uc-ef-bg1) !important;
       --input-text-background-color: var(--uc-ef-bg1) !important;
       --panel-background-color: var(--uc-ef-bg1) !important;
+      --popup-background-color: var(--uc-ef-bg1) !important;
+      --button-text-color-ghost: var(--uc-ef-fg) !important;
+      --button-text-color-ghost-hover: var(--uc-ef-fg) !important;
+      --button-text-color-ghost-active: var(--uc-ef-fg) !important;
+      --icon-color-accent-primary-desaturated: var(--uc-ef-aqua) !important;
       --card-background-color: var(--uc-ef-bg1) !important;
       --table-row-background-color-alternate: var(--uc-ef-bg1) !important;
       --background-color-dimmed: var(--uc-ef-bg2) !important;
@@ -114,6 +126,7 @@
 @-moz-document url("about:home"), url("about:newtab") {
   @media not (forced-colors: active) {
     :root {
+      --toolbox-background-gradient: none !important;
       --newtab-background-color: #2d353b !important;
       --newtab-background-color-secondary: #343f44 !important;
       --newtab-text-primary-color: #d3c6aa !important;
@@ -224,11 +237,11 @@
     .search-inner-wrapper moz-urlbar {
       font-family: JetBrainsMono Nerd Font Mono !important;
       --toolbar-field-background-color: #343f44 !important;
-      --toolbar-field-color: #d3c6aa !important;
+      --toolbar-field-text-color: #d3c6aa !important;
       --toolbar-field-border-color: #4f585e !important;
-      --toolbar-field-focus-background-color: #343f44 !important;
-      --toolbar-field-focus-color: #d3c6aa !important;
-      --toolbar-field-focus-border-color: #a7c080 !important;
+      --toolbar-field-background-color-focus: #343f44 !important;
+      --toolbar-field-text-color-focus: #d3c6aa !important;
+      --toolbar-field-border-color-focus: #a7c080 !important;
       --toolbarbutton-border-radius: 16px !important;
       --urlbar-border-radius: 16px !important;
     }
