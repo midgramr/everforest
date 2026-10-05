@@ -10,7 +10,7 @@
   --color-base-40: #475258;
   --color-base-50: #859289;
   --color-base-60: #859289;
-  --color-base-70: #9da9a0;
+  --color-base-70: #a29d8d;
   --color-base-100: #d3c6aa;
 
   /* Accent color */
@@ -48,6 +48,7 @@
 
   /* Text colors */
   --text-on-accent: #1e2326;
+  --tab-text-color: var(--tab-text-color-focused);
 
   /* Fonts */
   --font-interface-theme: "Overpass";
@@ -62,9 +63,9 @@
 
 .is-mobile.theme-dark {
   --color-base-00: #2d353b;
-  --color-base-10: #1e2326;
+  --color-base-10: #272e33;
   --color-base-20: #2d353b;
-  --color-base-30: #1e2326;
+  --color-base-30: #272e33;
 
   --color-black3: #2d353b;
 
@@ -80,6 +81,7 @@
 .workspace-leaf,
 .status-bar {
   background-color: var(--color-black3) !important;
+  /* color: #7a8478; */
 }
 
 .tooltip {
@@ -129,4 +131,9 @@
 
 .cm-formatting {
   color: inherit;
+}
+
+.theme-dark .markdown-rendered mark,
+.theme-dark .cm-s-obsidian span.cm-highlight {
+  background-color: rgba(var(--color-yellow-rgb), 0.35);
 }
