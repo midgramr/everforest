@@ -51,8 +51,8 @@
   --tab-text-color: var(--tab-text-color-focused);
 
   /* Fonts */
-  --font-interface-theme: "Overpass";
-  --font-text-theme: "Overpass";
+  --font-interface-theme: "Overpass Nerd Font";
+  --font-text-theme: "Overpass Nerd Font";
   --font-monospace-theme: "JetbrainsMono Nerd Font Mono";
 
   /* Code */
