@@ -169,7 +169,7 @@
       background: #2d353b !important;
       margin: 0 !important;
       min-height: 100vh !important;
-      font-family: "OverpassM Nerd Font", monospace !important;
+      font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
     }
 
     /* Keep the native search subtree and flatten its layout containers. */
@@ -192,7 +192,7 @@
       max-width: none !important;
       margin: 0 auto !important;
       padding: max(48px, calc(50vh - 240px)) 0 48px !important;
-      font: 14px/1.8 "OverpassM Nerd Font", monospace !important;
+      font: 14px/1.8 "JetBrainsMono Nerd Font Mono", monospace !important;
       color: #d3c6aa !important;
       background: transparent !important;
       box-shadow: none !important;
@@ -242,7 +242,7 @@
       bottom: calc(100% + 48px);
       left: 0;
       width: 100%;
-      font-family: "OverpassM Nerd Font", monospace;
+      font-family: "JetBrainsMono Nerd Font Mono", monospace;
       font-size: 48px;
       line-height: 1;
       color: #a7c080;
@@ -251,7 +251,7 @@
     }
 
     .search-wrapper content-search-handoff-ui {
-      font-family: "OverpassM Nerd Font", monospace !important;
+      font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
       --content-search-handoff-ui-background-color: #343f44 !important;
       --content-search-handoff-ui-color: #d3c6aa !important;
       --content-search-handoff-ui-fill: #7fbbb3 !important;
@@ -264,7 +264,7 @@
     }
 
     .search-inner-wrapper moz-urlbar {
-      font-family: "OverpassM Nerd Font", monospace !important;
+      font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
       --toolbar-field-background-color: #343f44 !important;
       --toolbar-field-text-color: #d3c6aa !important;
       --toolbar-field-border-color: #4f585e !important;
