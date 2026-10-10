@@ -121,14 +121,18 @@
   @media not (forced-colors: active) {
     #categories moz-page-nav-button {
       --page-nav-button-background-color: transparent !important;
-      --page-nav-button-background-color-selected: var(--uc-ef-green) !important;
+      --page-nav-button-background-color-selected: var(--uc-ef-greenbg) !important;
       --page-nav-button-background-color-hover: var(--uc-ef-bg1) !important;
       --page-nav-button-background-color-active: var(--uc-ef-bg1) !important;
       --page-nav-button-text-color: var(--uc-ef-fg) !important;
-      --page-nav-button-text-color-selected: var(--uc-ef-dim) !important;
+      --page-nav-button-text-color-selected: var(--uc-ef-fg) !important;
       --page-nav-button-text-color-hover: var(--uc-ef-fg) !important;
       --page-nav-button-text-color-active: var(--uc-ef-fg) !important;
-      --page-nav-button-indicator-background-color: transparent !important;
+      --page-nav-button-indicator-background-color: var(--uc-ef-green) !important;
+    }
+
+    #categories moz-page-nav-button:hover {
+      --page-nav-button-background-color-selected: var(--uc-ef-greenbg) !important;
     }
   }
 }
@@ -137,10 +141,26 @@
   @media not (forced-colors: active) {
     :root {
       --fxview-background-color: var(--uc-ef-bg0) !important;
+      --fxview-background-color-secondary: var(--uc-ef-bg1) !important;
+      --fxview-element-background-hover: var(--uc-ef-bg2) !important;
+      --fxview-element-background-active: var(--uc-ef-bg3) !important;
+      --fxview-primary-action-background: var(--uc-ef-green) !important;
     }
 
-    moz-page-nav-button {
+    moz-page-nav moz-page-nav-button {
       --page-nav-button-background-color: transparent !important;
+      --page-nav-button-background-color-selected: var(--uc-ef-greenbg) !important;
+      --page-nav-button-background-color-hover: var(--uc-ef-bg1) !important;
+      --page-nav-button-background-color-active: var(--uc-ef-bg1) !important;
+      --page-nav-button-text-color: var(--uc-ef-fg) !important;
+      --page-nav-button-text-color-selected: var(--uc-ef-fg) !important;
+      --page-nav-button-text-color-hover: var(--uc-ef-fg) !important;
+      --page-nav-button-text-color-active: var(--uc-ef-fg) !important;
+      --page-nav-button-indicator-background-color: var(--uc-ef-green) !important;
+    }
+
+    card-container {
+      --button-background-color-ghost: var(--uc-ef-bg1) !important;
     }
   }
 }
@@ -163,7 +183,7 @@
       background: #2d353b !important;
       margin: 0 !important;
       min-height: 100vh !important;
-      font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
+      font-family: JetBrainsMono Nerd Font Mono !important;
     }
 
     /* Keep the native search subtree and flatten its layout containers. */
@@ -186,7 +206,7 @@
       max-width: none !important;
       margin: 0 auto !important;
       padding: max(48px, calc(50vh - 240px)) 0 48px !important;
-      font: 14px/1.8 "JetBrainsMono Nerd Font Mono", monospace !important;
+      font: 14px/1.8 JetBrainsMono Nerd Font Mono !important;
       color: #d3c6aa !important;
       background: transparent !important;
       box-shadow: none !important;
@@ -236,7 +256,7 @@
       bottom: calc(100% + 48px);
       left: 0;
       width: 100%;
-      font-family: "JetBrainsMono Nerd Font Mono", monospace;
+      font-family: "JetBrainsMono Nerd Font Mono";
       font-size: 48px;
       line-height: 1;
       color: #a7c080;
@@ -245,7 +265,7 @@
     }
 
     .search-wrapper content-search-handoff-ui {
-      font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
+      font-family: JetBrainsMono Nerd Font Mono !important;
       --content-search-handoff-ui-background-color: #343f44 !important;
       --content-search-handoff-ui-color: #d3c6aa !important;
       --content-search-handoff-ui-fill: #7fbbb3 !important;
@@ -258,7 +278,7 @@
     }
 
     .search-inner-wrapper moz-urlbar {
-      font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
+      font-family: JetBrainsMono Nerd Font Mono !important;
       --toolbar-field-background-color: #343f44 !important;
       --toolbar-field-text-color: #d3c6aa !important;
       --toolbar-field-border-color: #4f585e !important;
