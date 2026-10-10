@@ -176,10 +176,17 @@
     }
   }
 
+  @media -moz-pref("sidebar.verticalTabs") {
+    #tabbrowser-tabs[orient="vertical"] {
+      --tab-background-color: var(--uc-ef-bg0) !important;
+    }
+  }
+
   /* Nova paints the expand-on-hover surface on the sidebar container. */
   #sidebar-container, #sidebar-main, #sidebar-box {
     --sidebar-launcher-surface-color: var(--uc-ef-bg0) !important;
     --sidebar-border-color: var(--uc-ef-bg2) !important;
+    --button-background-color-ghost: var(--uc-ef-bg0) !important;
     background-color: var(--uc-ef-bg0) !important;
     color: var(--uc-ef-fg) !important;
   }

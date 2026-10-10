@@ -1,15 +1,9 @@
 /* Everforest medium dark — Firefox 157.0, 2026-10-05.
  * Palette: sainnhe/everforest (MIT), supplied everforest.vim files.
- * Page styling is limited to built-in pages; scrollbar colors apply globally.
+ * Page styling is limited to built-in pages.
  * about:blank is excluded from page styling because websites embed it.
  * Modern Firefox design tokens checked against the installed stylesheets.
  */
-
-@media not (forced-colors: active) {
-  * {
-    scrollbar-color: #7a8478 #2d353b !important;
-  }
-}
 
 @-moz-document regexp("about:(?!blank(?:[?#].*)?$).*"),
   url-prefix("chrome://browser/content/preferences/"),
